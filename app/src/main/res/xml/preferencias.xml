@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Mi Categoria">
+
+    </PreferenceCategory>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_apikey"
+        android:title="Activar API key personalizada" />
+    <EditTextPreference
+        android:defaultValue="@string/apikey"
+        android:inputType="text"
+        android:key="settings_apikey_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Api key personalizada"
+        app:enabled="false" />
+    <ListPreference
+        android:defaultValue="standard"
+        android:entries="@array/unidades_entries"
+        android:entryValues="@array/unidades_values"
+        android:title="Unidades"
+        android:key="unidades"
+        />
+    <ListPreference
+        android:defaultValue="es"
+        android:entries="@array/idioma_entries"
+        android:entryValues="@array/idioma_values"
+        android:title="@string/settings_idiom_title"
+        android:key="@string/settings_idiom_key"
+        />
+    <PreferenceCategory android:title="Tema">
+        <androidx.preference.ListPreference
+            android:dialogTitle="@string/settings_theme_dialog_title"
+            android:entries="@array/settings_theme_entries"
+            android:entryValues="@array/settings_theme_values"
+            android:key="@string/settings_theme_key"
+            android:title="@string/settings_theme_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

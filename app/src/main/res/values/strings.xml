@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tiempo</string>
+
+    <string name="settings">Configuracion</string>
+    <string name="settings_theme_key">Tema</string>
+    <string name="settings_theme_title">Tema de la aplicacion</string>
+    <string name="settings_theme_dialog_title">Selecciona el tema de la aplicacion</string>
+    <string name="default_string">Por defecto del sistema</string>
+    <string name="light">Dia</string>
+    <string name="dark">Noche</string>
+    <string name="settings_idiom_title">Idiomas</string>
+    <string name="settings_idiom_key">idiomas</string>
+    <string name="metric">Metrico</string>
+    <string name="imperial">Imperial</string>
+    <string name="standard">Standard</string>
+    <string name="español">Español</string>
+    <string name="ingles">Ingles</string>
+    <string name="apikey">83a45ae2eaa9292fb37e84182f9ded07</string>
+</resources>
