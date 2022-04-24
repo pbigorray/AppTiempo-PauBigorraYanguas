@@ -9,17 +9,18 @@
         <item>standard</item>
         <item>metric</item>
         <item>imperial</item>
-
     </string-array>
 
 
     <string-array name="idioma_entries">
         <item>@string/español</item>
         <item>@string/ingles</item>
+        <item>@string/japones</item>
     </string-array>
     <string-array name="idioma_values">
         <item>es</item>
         <item>en</item>
+        <item>ja</item>
 
     </string-array>
     <string-array name="settings_theme_entries">
@@ -32,7 +33,6 @@
         <item>LIGHT</item>
         <item>DARK</item>
     </string-array>
-
 
 
 </resources>

@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -69,7 +70,7 @@ public class MainActivity extends BaseActivity implements CallInterface, View.On
     protected void onResume() {
         super.onResume();
         executeCall(this);
-            showProgress();
+        showProgress();
 
     }
 
@@ -84,8 +85,6 @@ public class MainActivity extends BaseActivity implements CallInterface, View.On
                 root = Connector.getConector().get(Root.class, "forecast?lang=" + GestionPreferencias.getInstance().getIdiomas(this) + "&units=" + GestionPreferencias.getInstance().getUnidades(this) + "&lat=" + ciudad.getLat() + "&lon=" + ciudad.getLon() + "&appid=" + GestionPreferencias.getInstance().getApiKey(this));
             } catch (Exception e) {
                 root = Connector.getConector().get(Root.class, "forecast?lang=" + GestionPreferencias.getInstance().getIdiomas(this) + "&units=" + GestionPreferencias.getInstance().getUnidades(this) + "&lat=" + ciudad.getLat() + "&lon=" + ciudad.getLon() + "&appid=83a45ae2eaa9292fb37e84182f9ded07");
-
-
             }
     }
 

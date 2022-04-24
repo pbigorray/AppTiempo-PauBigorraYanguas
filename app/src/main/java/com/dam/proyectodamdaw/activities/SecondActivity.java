@@ -31,14 +31,7 @@ public class SecondActivity extends AppCompatActivity {
         ciudad = (Ciudad)getIntent().getExtras().get("city");
 
         ImageView icon2;
-        TextView dia2;
-        TextView fecha2;
-        TextView hora2;
-        TextView decripcion2;
-        TextView datosTemp2;
-        TextView datosMax2;
-        TextView datosMin2;
-        TextView vientoVe;
+        TextView dia2,fecha2,hora2,decripcion2,datosTemp2,datosMax2,datosMin2,vientoVe,vientoDeg,humedad;
         Button atras;
 
         icon2=findViewById(R.id.icon2);
@@ -51,6 +44,8 @@ public class SecondActivity extends AppCompatActivity {
         datosMin2=findViewById(R.id.datosMIn2);
         vientoVe=findViewById(R.id.vientoVe);
         atras=findViewById(R.id.atrasMasInfo);
+        vientoDeg=findViewById(R.id.vientoDeg);
+        humedad=findViewById(R.id.humedad);
 
 
         List l =root.list.get(position);
@@ -70,6 +65,9 @@ public class SecondActivity extends AppCompatActivity {
         hora2.setText(new SimpleDateFormat("HH:mm").format(date));
 
         vientoVe.setText(""+l.wind.speed+" km/h");
+        vientoDeg.setText(""+l.wind.deg);
+        humedad.setText(""+l.main.humidity+" %");
+
 
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
