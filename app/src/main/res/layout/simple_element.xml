@@ -13,8 +13,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="dia"
-        android:textColor="@color/black"
         android:textStyle="bold"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/icon"
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="fecha"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toStartOf="@+id/hora"
         app:layout_constraintStart_toEndOf="@+id/dia"
         app:layout_constraintTop_toTopOf="@+id/dia" />
@@ -35,8 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="22:00"
-        android:textColor="@color/black"
         android:textStyle="bold"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fecha" />
 
@@ -46,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Temp"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/descripcion" />
 
@@ -55,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="10º"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/temperatura"
         app:layout_constraintStart_toEndOf="@+id/temperatura" />
 
@@ -64,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="Max"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/datosTemp"
         app:layout_constraintTop_toTopOf="@+id/datosTemp" />
 
@@ -74,6 +78,7 @@
         android:layout_marginStart="8dp"
         android:text="10º"
         android:textColor="#FF0000"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/tempMax"
         app:layout_constraintTop_toTopOf="@+id/tempMax" />
 
@@ -83,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Min"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/datosMax"
         app:layout_constraintTop_toTopOf="@+id/datosMax" />
 
@@ -93,6 +99,7 @@
         android:layout_marginStart="8dp"
         android:text="9º"
         android:textColor="#002AFF"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/tempMin"
         app:layout_constraintTop_toTopOf="@+id/tempMin" />
 
@@ -101,6 +108,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:scaleType="fitCenter"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -110,6 +118,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="descrip"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toTopOf="@+id/temperatura"
         app:layout_constraintStart_toStartOf="@+id/dia"
         app:layout_constraintTop_toBottomOf="@+id/dia" />

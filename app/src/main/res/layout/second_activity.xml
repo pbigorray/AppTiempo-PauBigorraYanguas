@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.ProyectoDamDaw">
 
     <TextView
         android:id="@+id/hora2"
@@ -11,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="22:00"
-        android:textColor="#000000"
         android:textStyle="bold"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/fecha2"
         app:layout_constraintTop_toTopOf="@+id/fecha2" />
 
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="descrip"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/icon2"
         app:layout_constraintStart_toEndOf="@+id/icon2"
         app:layout_constraintTop_toBottomOf="@+id/fecha2" />
@@ -32,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Max"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/datosTemp2"
         app:layout_constraintTop_toTopOf="@+id/datosTemp2" />
 
@@ -42,6 +45,7 @@
         android:layout_marginStart="8dp"
         android:text="10º"
         android:textColor="#FF0000"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/tempMax2"
         app:layout_constraintTop_toTopOf="@+id/tempMax2" />
 
@@ -52,6 +56,7 @@
         android:layout_marginStart="8dp"
         android:text="9º"
         android:textColor="#002AFF"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/tempMin2"
         app:layout_constraintTop_toTopOf="@+id/tempMin2" />
 
@@ -61,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="fecha"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/dia2"
         app:layout_constraintTop_toTopOf="@+id/dia2" />
 
@@ -70,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Temp"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/icon2"
         app:layout_constraintStart_toStartOf="@+id/descripcion2" />
 
@@ -79,8 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="dia"
-        android:textColor="#000000"
         android:textStyle="bold"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/icon2"
         app:layout_constraintTop_toTopOf="@+id/icon2" />
 
@@ -90,6 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="10º"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/temperatura2"
         app:layout_constraintTop_toTopOf="@+id/temperatura2" />
 
@@ -99,6 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Min"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toEndOf="@+id/datosMax2"
         app:layout_constraintTop_toTopOf="@+id/datosMax2" />
 
@@ -108,6 +117,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -118,6 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Velocidad "
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -129,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="1"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/velocidad"
         app:layout_constraintStart_toEndOf="@+id/velocidad"
         app:layout_constraintTop_toTopOf="@+id/velocidad"
@@ -141,6 +153,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="atras"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -150,6 +163,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Viento"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toEndOf="@+id/icon2"
         app:layout_constraintStart_toStartOf="@+id/icon2"
         app:layout_constraintTop_toBottomOf="@+id/icon2" />
@@ -160,6 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:text="Direccion"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/velocidad"
         app:layout_constraintStart_toEndOf="@+id/velocidad"
         app:layout_constraintTop_toTopOf="@+id/velocidad"
@@ -171,6 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="1"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
@@ -181,6 +197,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="1"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@+id/textView10" />
@@ -191,6 +208,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Humedad"
+        android:theme="@style/Theme.ProyectoDamDaw"
         app:layout_constraintEnd_toEndOf="@+id/icon2"
         app:layout_constraintStart_toStartOf="@+id/icon2"
         app:layout_constraintTop_toBottomOf="@+id/velocidad" />
