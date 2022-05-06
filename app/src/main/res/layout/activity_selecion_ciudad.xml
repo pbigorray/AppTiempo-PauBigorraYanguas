@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".activities.SelecionCiudad">
 
+  <Button
+      android:id="@+id/update"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:text="Acutualizar"
+      app:layout_constraintBottom_toBottomOf="@+id/añadir"
+      app:layout_constraintEnd_toStartOf="@+id/añadir" />
+
   <Spinner
       android:id="@+id/spinnerCiudad"
       android:layout_width="200dp"
