@@ -83,6 +83,16 @@ public class CallMethods<T>  {
         }
         return null;
     }
+    public Response<ResponseBody>  putResult(String url, RequestBody data){
+        Call<ResponseBody> call = service.putCall(url, data);
+        try {
+            return call.execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
     public String delete(String url){
         Call<ResponseBody> call = service.deleteCall(url);

@@ -1,11 +1,14 @@
 package com.dam.proyectodamdaw.activities;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
@@ -42,7 +45,7 @@ public class SelecionCiudad extends BaseActivity implements AdapterView.OnItemSe
     private Spinner spinnerCi;
     private ImageView imaCiu;
     private ArrayAdapter arrayAdapter;
-    private Button añadir,gps;
+    private Button añadir,gps,update;
     private final int ACTIVITY_CODE=1234;
     private List<Ciudad> ciudadList;
 
@@ -60,6 +63,7 @@ public class SelecionCiudad extends BaseActivity implements AdapterView.OnItemSe
         setContentView(R.layout.activity_selecion_ciudad);
         ThemeSetup.applyPreferenceTheme(getApplicationContext());
         añadir=findViewById(R.id.añadir);
+        update=findViewById(R.id.update);
         imaCiu=findViewById(R.id.imaCiu);
         button=findViewById(R.id.pronostico);
         spinnerCi=findViewById(R.id.spinnerCiudad);
@@ -115,6 +119,29 @@ public class SelecionCiudad extends BaseActivity implements AdapterView.OnItemSe
             }
         });
 
+        //update
+        ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    // No es necesario identificar la actividad que envia resultados
+                    if(result.getResultCode() == RESULT_CANCELED)
+                        Toast.makeText(this, "Cancelado por el usuario", Toast.LENGTH_LONG).show();
+                    else if (result.getResultCode() == Activity.RESULT_OK) {
+                        Intent data = result.getData();
+                        String name = data.getExtras().getString("name");
+                    }
+                });
+
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),UpdateCiudad.class);
+                someActivityResultLauncher.launch(intent);
+                executeCall(SelecionCiudad.this);
+            }
+        });
+
+
 
     }
 
@@ -137,7 +164,7 @@ public class SelecionCiudad extends BaseActivity implements AdapterView.OnItemSe
     }
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-         selected= (Ciudad)adapterView.getSelectedItem();
+        selected= (Ciudad)adapterView.getSelectedItem();
         ImageDownloader.DownloadImage(this,selected.getImagen(),imaCiu, R.drawable.ic_launcher_background);
     }
 

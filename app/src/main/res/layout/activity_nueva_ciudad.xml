@@ -41,7 +41,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="64dp"
         android:text="Nombre de la ciudad"
         app:layout_constraintStart_toStartOf="@+id/nuevoNombreCiu"
         app:layout_constraintTop_toTopOf="parent" />
